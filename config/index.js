@@ -1,5 +1,5 @@
 'use strict'
-process.env.NEWS_FEED_HOST_URL = 'http://dev.telemarkportalen.vpdev.no/artikler.json'
+
 var envs = process.env
 
 var config = {
