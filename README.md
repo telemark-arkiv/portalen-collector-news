@@ -17,7 +17,7 @@ curl -d '{"cmd": "collect-info", "type":"user", "user":"gasg", "roles": ["alle",
 
 ## Messages emitted
 
-### ```role: info, cmd: content-collected```
+### ```role: info, info: content-collected```
 
 Contains collected info for user/role wrapped in the data property
 
