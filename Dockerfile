@@ -27,13 +27,5 @@ WORKDIR "/src"
 # Install dependencies
 RUN npm install --production
 
-# Env variables
-ENV PORTALEN_COLLECTOR_NEWS_TAG portalen-collector-news
-ENV PORTALEN_COLLECTOR_NEWS_URL http://portalen.collector.news.no
-ENV PORTALEN_COLLECTOR_NEWS_HOST localhost
-ENV PORTALEN_COLLECTOR_NEWS_PORT 8000
-ENV NEWS_FEED_HOST_URL http://portalen.collector.news.no
-ENV NEWS_FEED_CHANNEL_ID news
-
 # Startup
 CMD ["node", "service.js", "--seneca-log=type:act"]
