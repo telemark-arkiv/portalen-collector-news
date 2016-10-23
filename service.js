@@ -1,11 +1,13 @@
 'use strict'
 
-var Seneca = require('seneca')
-var Mesh = require('seneca-mesh')
-var News = require('./lib/news')
-var envs = process.env
+const Seneca = require('seneca')
+const Mesh = require('seneca-mesh')
+const News = require('tfk-seneca-collect-content')
+const envs = process.env
+const config = require('./config')
+const pkg = require('./package.json')
 
-var options = {
+const options = {
   seneca: {
     tag: envs.PORTALEN_COLLECTOR_NEWS_TAG || 'portalen-collector-news-tag'
   },
@@ -16,7 +18,10 @@ var options = {
     ]
   },
   news: {
-    url: envs.PORTALEN_COLLECTOR_NEWS_URL || 'http://news.no'
+    type: 'news',
+    system: pkg.name,
+    channelId: config.channelId,
+    feedHostUrl: config.feedHostUrl
   },
   isolated: {
     host: envs.PORTALEN_COLLECTOR_NEWS_HOST || 'localhost',
@@ -24,7 +29,7 @@ var options = {
   }
 }
 
-var Service = Seneca(options.seneca)
+const Service = Seneca(options.seneca)
 
 if (envs.PORTALEN_COLLECTOR_NEWS_ISOLATED) {
   Service.listen(options.isolated)
