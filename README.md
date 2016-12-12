@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/telemark/portalen-collector-news.svg?branch=master)](https://travis-ci.org/telemark/portalen-collector-news)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # portalen-collector-news
 Collects news for portalen
 
@@ -29,3 +31,6 @@ Contains collected info for user/role wrapped in the data property
     data: [] //collected info
   }
 ```
+
+## License
+[MIT](LICENSE)
