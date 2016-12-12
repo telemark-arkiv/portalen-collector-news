@@ -9,6 +9,7 @@ const pkg = require('./package.json')
 
 const options = {
   seneca: {
+    log: 'silent',
     tag: envs.PORTALEN_COLLECTOR_NEWS_TAG || 'portalen-collector-news-tag'
   },
   mesh: {
@@ -21,7 +22,8 @@ const options = {
     type: 'news',
     system: pkg.name,
     channelId: config.channelId,
-    feedHostUrl: config.feedHostUrl
+    feedHostUrl: config.feedHostUrl,
+    verbose: true
   },
   isolated: {
     host: envs.PORTALEN_COLLECTOR_NEWS_HOST || 'localhost',
