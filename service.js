@@ -15,12 +15,13 @@ const options = {
   mesh: {
     auto: true,
     listen: [
-      {pin: 'cmd:collect-info, type:user', model: 'observe'}
+      {pin: 'cmd: collect-info, type: user', model: 'observe'}
     ]
   },
   news: {
     type: 'news',
     system: pkg.name,
+    tag: config.newsServiceTag,
     channelId: config.channelId,
     feedHostUrl: config.feedHostUrl,
     verbose: true
