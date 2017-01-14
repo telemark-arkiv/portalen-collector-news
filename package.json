@@ -1,6 +1,6 @@
 {
   "name": "portalen-collector-news",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Collect news for portalen",
   "license": "MIT",
   "private": true,
