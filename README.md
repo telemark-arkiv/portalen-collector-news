@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/telemark/portalen-collector-news.svg?branch=master)](https://travis-ci.org/telemark/portalen-collector-news)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # portalen-collector-news
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/portalen-collector-news.svg)](https://greenkeeper.io/)
 Collects news for portalen
 
 ## Messages handled
